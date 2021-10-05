@@ -11,13 +11,14 @@ import MenuItem from "../menu-item/menu-item.component";
 const Directory = ({ sections }) => {
   return (
     <div className="directory-menu">
-      {sections.map(({ id, title, imageUrl, size }) => {
+      {sections.map(({ id, title, imageUrl, size, linkUrl }) => {
         return (
           <MenuItem
             key={id}
             title={title.toUpperCase()}
             imageUrl={imageUrl}
             size={size}
+            linkUrl={linkUrl}
           />
         );
       })}
