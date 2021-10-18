@@ -1,6 +1,5 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../assets/crown.svg";
-import { Link } from "react-router-dom";
 import CartIcon from "../cart-icon/cart-icon.component";
 import CartDropDown from "../cart-dropdown/cart-dropdown.component";
 

@@ -20,7 +20,7 @@ class App extends React.Component {
 
   // google open authentication
   componentDidMount() {
-    const { setCurrentUser, collectionsArray } = this.props;
+    const { setCurrentUser } = this.props;
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
       // this.setState({ currentUser: user });
 
