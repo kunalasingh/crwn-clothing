@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { useParams } from "react-router";
 
 import CollectionItem from "../../components/collection-item/collection-item.component";
 
@@ -12,6 +13,8 @@ import {
 } from "./collection.styles";
 
 const CollectionPage = ({ collection }) => {
+  const params = useParams();
+  console.log("collection params : ", params);
   const { title, items } = collection;
   return (
     <CollectionPageContainer>
